@@ -47,3 +47,21 @@ usethis::use_git()
 Then appears as tab in rstudio. 
 - Commit locally 
 - Then push local files to github 
+- this creates a separate file from the main file with new updates 
+
+usethis::git_default_branch_rename(from = 'master', to = 'main')
+ function renames branch/file to main 
+ 
+ Now this project branch name is main. For new project then would need to use this function again. 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+

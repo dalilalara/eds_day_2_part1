@@ -7,4 +7,23 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
+
+Views portions of large data sets 
+```{r}
+head(penguins)
+#tail(penguins)
+#glimpse(penguins)
+```
+
+Creating ggplot
+Scatter plot of body mass versus flipper length
+changes size depending on species if added in geom point size = species
+```{r}
+ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + geom_point(aes(color = species), size = 4)
+```
+
+
+
