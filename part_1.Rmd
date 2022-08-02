@@ -1,0 +1,43 @@
+---
+title: 'EDS 212 Day 2 Part 1: Derivative and Git Intro'
+author: "Dalila Lara"
+date: "2022-08-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Derivatives in R
+
+Find the derivative of $$f(x) =5x^2$$
+
+```{r}
+ex_1 <- expression(5 * x ^ 2)
+my_derivative <- deriv(ex_1, "x")
+my_derivative
+```
+
+#I want to find the slope at x = 2.8 #Create a sequence of values to evaluate multiple different integers for derivative.
+
+```{r}
+x <- 2.8
+eval(my_derivative)
+```
+
+\#***Second method*** to find a derivative Find the slope of $g(z) = 2z^3-10.5z^2+4.1$ D gives us a simple output
+
+```{r}
+gz <- expression(2 * z ^ 3 - 10.5 * z ^ 2 + 4.1 )
+
+dg_dz <- D(gz, 'z')
+dg_dz
+```
+
+#Evaluate the slope over a range of values
+
+```{r}
+z <- seq(from = -3, to = 4, by = 0.5)
+eval(dg_dz)
+```
