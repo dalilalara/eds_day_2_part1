@@ -44,5 +44,6 @@ eval(dg_dz)
 
 Git Hub 
 usethis::use_git()
-Then appears as tab in rstudio 
-
+Then appears as tab in rstudio. 
+- Commit locally 
+- Then push local files to github 
