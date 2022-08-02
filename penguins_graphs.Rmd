@@ -22,7 +22,7 @@ Creating ggplot
 Scatter plot of body mass versus flipper length
 changes size depending on species if added in geom point size = species
 ```{r}
-ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + geom_point(aes(color = species), size = 4)
+ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + geom_point(aes(color = species), size = 1) + facet_wrap(~island) + theme_minimal() + labs(x = "Body Magg (g)", y = "Flipper Lengthe (mm)")
 ```
 
 
