@@ -44,4 +44,5 @@ eval(dg_dz)
 
 Git Hub 
 usethis::use_git()
-Testing 
+Then appears as tab in rstudio 
+
